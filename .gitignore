@@ -1,0 +1,9 @@
+*.pyc
+*.yaml
+*.txt
+*.pdf
+*.md
+*.html
+__pycache__
+/PUSSY AND HER LANGUAGE (Marvin R. Clark, 1895)_files
+scratch.py
