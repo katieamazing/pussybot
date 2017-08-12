@@ -2,7 +2,7 @@
 
 import imgs
 from bs4 import BeautifulSoup
-import os, urllib, sys, codecs
+import os, sys, codecs, random
 import nltk.data
 sys.stdout = codecs.getwriter('utf8')(sys.stdout)
 sys.stderr = codecs.getwriter('utf8')(sys.stderr)
@@ -20,5 +20,10 @@ for s in sentences:
     if len(s) > 50 and len(s) < 140 and any(keyword in s.lower() for keyword in keywords):
         possible.append(s)
 
-print(possible)
-print(len(possible))
+tweet_image = random.choice(imgs.imgs)
+print(tweet_image)
+
+tweet_text = random.choice(possible)
+
+
+print(tweet_text)
