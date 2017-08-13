@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import imgs
 
 import os, sys, codecs, yaml, random, requests
@@ -46,9 +44,7 @@ twitter = Twython(twitter_app_key, twitter_app_secret, twitter_oauth_token, twit
 res = requests.get(tweet_image)
 image_io = BytesIO(res.content)
 
-
 # Twitter upload, tweet
-
 image_io.seek(0)
 
 response = twitter.upload_media(media=image_io)
